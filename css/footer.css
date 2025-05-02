@@ -1,0 +1,29 @@
+
+.footer_wrapper {
+    background: #000000;
+}
+
+.footer_bottom {
+    border-top: 1px solid #171717;
+    padding: 25px 0;
+}
+
+.footer_bottom span {
+    display: block;
+    font-size: 14px;
+    color: #efefef;
+    text-align: center;
+}
+
+.footer_bottom span a {
+    display: inline-block;
+    color: #b5b5b5;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.footer_bottom span a:hover {
+    color: #fff;
+}

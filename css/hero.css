@@ -1,0 +1,126 @@
+/* Layout principal */
+.hero-section {
+  padding: 60px 20px;
+}
+
+.hero-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: right;
+  justify-content: center;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+  animation: fadeInUp 1s ease-in-out;
+  max-width: 500px;
+  text-align: right;
+}
+
+.hero-text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #00283a;
+}
+
+.hero-text h2 strong {
+  color: #007bff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Imagen de perfil */
+.hero-image {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .2; /* controla qué tan oscuro es */
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 2; /* asegúrate de que la imagen esté encima del fondo */
+}
+/* Redes sociales */
+.social_links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #163840;
+    color: #00283a;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    background: transparent;
+    &:hover {
+      background: #007bff;
+      color: #fff;
+    }
+  }
+}
+
+
+/* Animación */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1 1 100%;
+  }
+
+  .social_links {
+    justify-content: center;
+  }
+}

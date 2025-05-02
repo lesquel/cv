@@ -1,0 +1,109 @@
+/* Estructura general */
+#portfolio {
+  padding: 40px 0 80px;
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section-title h6 {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Filtros (puedes agregar más si implementas funcionalidad JS) */
+.portfolio-filters {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.portfolio-filters li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.portfolio-filters a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #f7f7f7;
+  color: #222;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 12px;
+}
+
+.portfolio-filters a:hover,
+.portfolio-filters a.active {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Grid de proyectos */
+.portfolio-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Item individual */
+.portfolio-item {
+  position: relative;
+  background: linear-gradient(45deg, #22682a, #9b4a1b, #3a342a);
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+  opacity: 0.85;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  opacity: 0.4;
+}
+
+figcaption {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.portfolio-item:hover figcaption {
+  opacity: 1;
+}
+
+figcaption h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+figcaption h2 span {
+  color: #a3a3a3;
+}

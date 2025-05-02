@@ -1,0 +1,91 @@
+.aboutUs-container {
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  background-position-y: 70px;
+}
+
+.about-us {
+  margin-top: 30px;
+  margin-bottom: 0;
+  .row {
+    display: flex;
+    gap: 20px;
+    .col-md-6 {
+      width: 50%;
+    }
+  }
+}
+
+.about-us h3 {
+  font-size: 2em;
+  color: #000;
+}
+
+.about-us p {
+  line-height: 1.625em;
+  padding: 15px 0;
+}
+
+.about-us .about-us-list {
+  list-style: none;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.about-us .points {
+  position: relative;
+  list-style-type: none;
+  padding: 5px 0 5px 30px;
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.about-us .points:before {
+  content: "\f058";
+  position: absolute;
+  font-family: FontAwesome;
+  font-size: 1em;
+  color: #000;
+  left: 0;
+  top: 6px;
+}
+
+.progress {
+  border-radius: 0;
+  overflow: visible;
+  height: 10px;
+  margin-bottom: 32px;
+  background-color: #e8e8e8;
+}
+
+.progress-bar {
+  background: rgb(125, 125, 125);
+  transition: width 1.5s ease-in-out;
+}
+
+.progressText {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.skills {
+  padding: 80px 0;
+}
+
+.skills p {
+  margin-bottom: 20px;
+}
+
+#about-us .read-more {
+  border: 1px solid #ed5441;
+  color: #1a1a1a;
+}
+
+#about-us .read-more:hover {
+  background-color: #e74c3c;
+  border: 1px solid #e74c3c;
+  color: #fff;
+}
