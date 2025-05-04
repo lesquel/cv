@@ -1,9 +1,5 @@
 .aboutUs-container {
   margin-top: 100px;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: auto 100%;
-  background-position-y: 70px;
 }
 
 .about-us {
@@ -16,41 +12,39 @@
       width: 50%;
     }
   }
-}
 
-.about-us h3 {
-  font-size: 2em;
-  color: #000;
-}
+  h3 {
+    font-size: 2em;
+    color: #000;
+  }
 
-.about-us p {
-  line-height: 1.625em;
-  padding: 15px 0;
-}
+  p {
+    line-height: 1.625em;
+    padding: 15px 0;
+  }
+  .about-us-list {
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .points {
+    position: relative;
+    list-style-type: none;
+    padding: 5px 0 5px 30px;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 
-.about-us .about-us-list {
-  list-style: none;
-  margin-bottom: 20px;
-  padding-left: 0;
-}
-
-.about-us .points {
-  position: relative;
-  list-style-type: none;
-  padding: 5px 0 5px 30px;
-  color: #000;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.about-us .points:before {
-  content: "\f058";
-  position: absolute;
-  font-family: FontAwesome;
-  font-size: 1em;
-  color: #000;
-  left: 0;
-  top: 6px;
+  .points:before {
+    content: "\f058";
+    position: absolute;
+    font-family: FontAwesome;
+    font-size: 1em;
+    color: #000;
+    left: 0;
+    top: 6px;
+  }
 }
 
 .progress {
